@@ -14,7 +14,8 @@
 - Any extra programs written by the agent to complete a task should be placed in the scratch dir (`/Users/williamnorland/.gemini/antigravity/scratch` or `/Users/williamnorland/.gemini/antigravity-ide/scratch`) nowhere else.
 - Always ask if code being worked on should be run or not.
 
-# Git Commit Rules
+# Git Rules
+This section defines rules for creating Git commits and writing commit messages.
 
 ## Definitions
 - **Broken:** Any segment of code that is producing unintended, unexpected (that is, it is not a documented and accepted unintended behavior) behavior.
@@ -37,9 +38,6 @@ When to use what prefix:
 ```
 
 # Python Style Guide
-
-**Intention**
-This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
 
 **Rules:**
 - Normally named functions means public functions.
