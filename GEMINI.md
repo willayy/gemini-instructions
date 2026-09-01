@@ -39,6 +39,8 @@ When to use what prefix:
 
 # Python Style Guide
 
+This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
+
 **Rules:**
 - Normally named functions means public functions.
 - _ means module private functions.
