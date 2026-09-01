@@ -8,9 +8,6 @@ A central repository storing global customization instructions, rules, and workf
 gemini-instructions/
 ├── GEMINI.md
 ├── config/
-│   ├── rules/
-│   │   ├── git_commit_rules.md
-│   │   └── python_styleguide.md
 │   └── global_workflows/
 │       ├── add-commit-push.md
 │       ├── ask.md
