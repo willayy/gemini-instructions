@@ -9,6 +9,7 @@ gemini-instructions/
 ├── GEMINI.md
 ├── config/
 │   ├── rules/
+│   │   ├── git_commit_rules.md
 │   │   └── python_styleguide.md
 │   └── global_workflows/
 │       ├── add-commit-push.md
