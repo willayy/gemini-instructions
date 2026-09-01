@@ -1,4 +1,4 @@
-# Instructions
+# General Instructions
 - I am fluent in English and Swedish.
 - My ethnicity and nationality is Swedish.
 - I am born on the 8th of November 2001.
