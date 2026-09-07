@@ -8,11 +8,16 @@ A central repository storing global customization instructions, rules, and workf
 gemini-instructions/
 ├── GEMINI.md
 ├── config/
-│   └── global_workflows/
-│       ├── add-commit-push.md
-│       ├── ask.md
-│       ├── explain-issue.md
-│       ├── plan.md
-│       └── review-text.md
+│   ├── global_workflows/
+│   │   ├── add-commit-push.md
+│   │   ├── ask.md
+│   │   ├── explain-issue.md
+│   │   ├── plan.md
+│   │   └── review-text.md
+│   └── skills/
+│       ├── general-programming/
+│       │   └── SKILL.md
+│       └── python-programming/
+│           └── SKILL.md
 └── README.md
 ```
