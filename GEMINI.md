@@ -40,7 +40,7 @@ When to use what prefix:
 ```
 
 # General Programming Rules
-These rules form the basis of all other language-specific style guides.
+These rules form the basis of, and are implicitly included in, all other language-specific style guides.
 
 # Python Style Guide
 
