@@ -59,7 +59,7 @@ for i in range(a):
             ...
 ```
 
-# Python Style Guide
+# Python Programming Instructions
 
 This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
 
