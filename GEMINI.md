@@ -47,6 +47,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
 - No code, except switch statements, may nest deeper than one level from the root level of a function, file or class.
 - Lines of code should not span more than 80 characters.
+- Do not store data in code.
 
 **Examples of illegal nesting:**
 ```py
