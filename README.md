@@ -17,6 +17,8 @@ gemini-instructions/
 │   └── skills/
 │       ├── general-programming/
 │       │   └── SKILL.md
+│       ├── git-instructions/
+│       │   └── SKILL.md
 │       └── python-programming/
 │           └── SKILL.md
 └── README.md
