@@ -47,6 +47,16 @@ These rules form the basis of, and are implicitly included in, all other languag
 - Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
 - No code, except match/case statements, may nest deeper than one level from the root level of a function, file or class.
 
+**Examples of illegal nesting:**
+```py
+for i in range(a):
+    for j in range (b):
+        # Already illegal
+        for k in range(c):
+            # Very illegal...
+            ...
+```
+
 # Python Style Guide
 
 This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
@@ -66,13 +76,3 @@ This styleguide aims to be a complement to the PEP styleguides & unwritten idiom
 
 **Design recommendations**
 - All generic logic (functions, classes, files) that is so general that it cant be associated with JUST a single functionality is regarded as something that should be placed in a utils.py file. For example filtering, sorting, distance calculations, mapping etc. A lot of these functions are already available from the Python standard library, which should always be consulted _before_ implementing such generic functions.
-
-**Examples of illegal nesting:**
-```py
-for i in range(a):
-    for j in range (b):
-        # Already illegal
-        for k in range(c):
-            # Very illegal...
-            ...
-```
