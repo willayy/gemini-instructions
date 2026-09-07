@@ -15,11 +15,11 @@ gemini-instructions/
 │   │   ├── plan.md
 │   │   └── review-text.md
 │   └── skills/
-│       ├── general-programming/
+│       ├── general-programming-instructions/
 │       │   └── SKILL.md
 │       ├── git-instructions/
 │       │   └── SKILL.md
-│       └── python-programming/
+│       └── python-programming-instructions/
 │           └── SKILL.md
 └── README.md
 ```
