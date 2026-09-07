@@ -39,6 +39,9 @@ When to use what prefix:
 [optional body]
 ```
 
+# General Programming Rules
+These rules form the basis of all other language-specific style guides.
+
 # Python Style Guide
 
 This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
