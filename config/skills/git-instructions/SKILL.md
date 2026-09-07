@@ -1,6 +1,6 @@
 ---
 name: git-instructions
-description: Guidelines and constraints for creating Git commits and commit messages. Defines Broken, Software Object (SO), commit prefixes (NEW, FIX, CHANGE), formatting, and atomic commit constraints. Activate when preparing, writing, or executing Git commits.
+description: You should always use this skill when creating Git commits, staging files, or writing commit messages. Enforces atomic commit constraints (one commit per Software Object change), prefix standards (NEW, FIX, CHANGE), formatting, and definitions.
 ---
 
 # Git Instructions
