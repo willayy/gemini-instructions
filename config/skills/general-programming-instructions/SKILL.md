@@ -1,6 +1,6 @@
 ---
-name: general-programming
-description: Fundamental programming principles including Single Responsibility Principle (SRP), encapsulation, 80-character line length limits, no AI comments, and single-level nesting constraints. Activate when writing, reviewing, or refactoring code in any language.
+name: general-programming-instructions
+description: You should always use this skill when writing, reviewing, or refactoring code in any programming language. Enforces core programming principles including Single Responsibility Principle (SRP), encapsulation, 80-character line length limits, no AI comments, single-level nesting constraints, and data separation.
 ---
 
 # General Programming Instructions
