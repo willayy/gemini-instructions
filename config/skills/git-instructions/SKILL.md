@@ -1,6 +1,6 @@
 ---
 name: git-instructions
-description: You should always use this skill when creating Git commits, staging files, or writing commit messages. Enforces atomic commit constraints (one commit per Software Object change), prefix standards (NEW, FIX, CHANGE), formatting, and definitions.
+description: Contains Git rules that must be followed when staging files, creating Git commits, or writing commit messages.
 ---
 
 # Git Instructions
