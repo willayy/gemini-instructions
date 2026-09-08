@@ -14,6 +14,9 @@ These rules form the basis of, and are implicitly included in, all other languag
 - Lines of code should not span more than 100 characters.
 - Do not store data in code.
 - Anonymous functions should never bypass the line limit, though shorter ones used for maps and predicates are acceptable.
+- For testing new features, testing behavior, reproducing errors or diagnosing bugs prefer using inline python code through the terminal.
+- Any extra programs written by the agent to complete a task should be placed in the scratch dir (`~/.gemini/antigravity/scratch` or `~/.gemini/antigravity-ide/scratch`) nowhere else.
+- Always ask if code being worked on should be run or not.
 
 **Examples of illegal nesting:**
 ```py
