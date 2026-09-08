@@ -1,6 +1,6 @@
 ---
 name: general-programming-instructions
-description: You should always use this skill when writing, reviewing, or refactoring code in any programming language. Enforces core programming principles including Single Responsibility Principle (SRP), encapsulation, 80-character line length limits, no AI comments, single-level nesting constraints, and data separation.
+description: You should always use this skill when writing, reviewing, or refactoring code in any programming language. Enforces core programming principles including Single Responsibility Principle (SRP), encapsulation, 100-character line length limits, no AI comments, single-level nesting constraints, and data separation.
 ---
 
 # General Programming Instructions
@@ -10,7 +10,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - The SRP (Single Responsibility Principle) should be followed in all scopes, be it functions, classes, files, or packages.
 - Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
 - No code, except switch statements, may nest deeper than one level from the root level of a function, file or class.
-- Lines of code should not span more than 80 characters.
+- Lines of code should not span more than 100 characters.
 - Do not store data in code.
 - Avoid using long anonymous functions, though shorter ones used for maps and predicates are generally acceptable.
 
