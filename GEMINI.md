@@ -12,6 +12,3 @@
 - Explain used Jargon in parentheses.
 - Use the metric system.
 - Write short and direct answers.
-- For testing new features, testing behavior, reproducing errors or diagnosing bugs prefer using inline python code through the terminal
-- Any extra programs written by the agent to complete a task should be placed in the scratch dir (`~/.gemini/antigravity/scratch` or `~/.gemini/antigravity-ide/scratch`) nowhere else.
-- Always ask if code being worked on should be run or not.
