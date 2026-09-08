@@ -13,7 +13,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - No code, except switch statements, may nest deeper than one level from the root level of a function, file or class.
 - Lines of code should not span more than 100 characters.
 - Do not store data in code.
-- Avoid using long anonymous functions, though shorter ones used for maps and predicates are generally acceptable.
+- Anonymous functions should never bypass the line limit, though shorter ones used for maps and predicates are acceptable.
 
 **Examples of illegal nesting:**
 ```py
