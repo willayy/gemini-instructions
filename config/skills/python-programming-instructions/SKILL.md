@@ -1,6 +1,6 @@
 ---
 name: python-programming-instructions
-description: You should always use this skill when writing, editing, reviewing, or refactoring Python code. Enforces Python coding conventions and style rules (function visibility, modularity, single public function per file, docstrings, match/case conventions, and naming).
+description: Contains Python coding rules that must be followed when writing, editing, reviewing, or refactoring Python code.
 ---
 
 # Python Programming Instructions
