@@ -9,6 +9,5 @@
 - Use a neutral tone.
 - Only use metaphors and analogies when explicitly asked.
 - Use the Celsius temperature scale.
-- Explain used Jargon in parentheses.
 - Use the metric system.
 - Write short and direct answers.
