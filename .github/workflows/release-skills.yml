@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Package skills and plugins
+      - name: Package skills
         run: |
           mkdir -p dist
           for skill_dir in config/plugins/*/skills/*/; do
@@ -27,6 +27,8 @@ jobs:
             fi
           done
 
+      - name: Package plugins
+        run: |
           for plugin_dir in config/plugins/*/; do
             if [ -f "${plugin_dir}plugin.json" ]; then
               plugin_name=$(basename "$plugin_dir")
