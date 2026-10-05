@@ -1,6 +1,6 @@
-# Gemini Global Instructions & Skills
+# Gemini Global Instructions & Plugins
 
-A central repository storing global customization instructions, rules, and skills for Google Antigravity and Gemini agents.
+A central repository storing global customization instructions, rules, and plugins for Google Antigravity and Gemini agents.
 
 ## Repository Structure
 
@@ -11,18 +11,26 @@ gemini-instructions/
 │   └── workflows/
 │       └── release-skills.yml
 ├── config/
-│   └── skills/
-│       ├── add-commit-push/
-│       ├── agent-development-instructions/
-│       ├── ask/
-│       ├── explain-issue-and-propose-fix/
-│       ├── general-programming-instructions/
-│       ├── git-instructions/
-│       ├── python-programming-instructions/
-│       ├── react-programming-instructions/
-│       ├── relational-database-instructions/
-│       ├── review-text/
-│       ├── sandbox-task/
-│       └── skill-creation/
+│   └── plugins/
+│       ├── williams-agentic-programming/
+│       │   ├── plugin.json
+│       │   ├── README.md
+│       │   └── skills/
+│       │       ├── add-commit-push/
+│       │       ├── agent-development-instructions/
+│       │       ├── general-programming-instructions/
+│       │       ├── git-instructions/
+│       │       ├── python-programming-instructions/
+│       │       ├── react-programming-instructions/
+│       │       └── relational-database-instructions/
+│       └── williams-general-agentic-work/
+│           ├── plugin.json
+│           ├── README.md
+│           └── skills/
+│               ├── ask/
+│               ├── explain-issue-and-propose-fix/
+│               ├── review-text/
+│               ├── sandbox-task/
+│               └── skill-creation/
 └── README.md
 ```
