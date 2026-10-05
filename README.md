@@ -5,7 +5,7 @@ A central repository storing global customization instructions, rules, and plugi
 ## Repository Structure
 
 ```
-gemini-instructions/
+williams-agentic-AI-plugins-and-skills/
 ├── GEMINI.md
 ├── .github/
 │   └── workflows/
