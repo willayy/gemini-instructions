@@ -1,0 +1,37 @@
+name: Release Skills
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Package skills
+        run: |
+          mkdir -p dist
+          for skill_dir in config/skills/*/; do
+            if [ -f "${skill_dir}SKILL.md" ]; then
+              skill_name=$(basename "$skill_dir")
+              echo "Packaging $skill_name..."
+              (cd "$skill_dir" && zip -r "$GITHUB_WORKSPACE/dist/${skill_name}.zip" . -x "*.DS_Store*")
+            fi
+          done
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="v$(date +'%Y.%m.%d')-${{ github.run_number }}"
+          gh release create "$TAG" dist/*.zip \
+            --title "Skills Release $TAG" \
+            --generate-notes
