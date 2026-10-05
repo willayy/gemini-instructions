@@ -13,6 +13,7 @@ gemini-instructions/
 ├── config/
 │   └── skills/
 │       ├── add-commit-push/
+│       ├── agent-development-instructions/
 │       ├── ask/
 │       ├── explain-issue-and-propose-fix/
 │       ├── general-programming-instructions/
@@ -21,7 +22,6 @@ gemini-instructions/
 │       ├── react-programming-instructions/
 │       ├── relational-database-instructions/
 │       ├── review-text/
-│       ├── sandbox-task/
-│       └── software-engineering-instructions/
+│       └── sandbox-task/
 └── README.md
 ```
