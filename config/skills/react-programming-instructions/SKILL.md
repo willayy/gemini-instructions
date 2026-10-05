@@ -15,7 +15,7 @@ This styleguide aims to be a complement to standard React and TypeScript convent
 - **Composition over Redeclaration:** Rely on `props` and `children` in components to promote composition over redeclaration.
 - **Colocation:** Code that is used together is located together.
 - **Shared Code Organization:** Components or logic used in multiple places must be placed in a root `.../src/` directory:
-  - `.../src/utils/`: For reusable generalist logic.
-  - `.../src/lib/`: For integration with, or other kinds of use of, other software.
-  - `.../src/components/`: For reusable shared UI components.
-  - `.../src/hooks/`: For reusable shared hooks.
+  - **`.../src/utils/`:** For reusable generalist logic.
+  - **`.../src/lib/`:** For integration with, or other kinds of use of, other software.
+  - **`.../src/components/`:** For reusable shared UI components.
+  - **`.../src/hooks/`:** For reusable shared hooks.
