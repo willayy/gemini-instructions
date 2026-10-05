@@ -15,9 +15,9 @@ Group attributes by the real-world concept they belong to. Attributes belong in 
 
 ## Map Cardinality to Keys
 Separate data into different tables based on how entities relate to one another:
-- One-to-One (1:1): Keep them in the same table by default.
-- One-to-Many (1:N): Put the foreign key on the "many" side.
-- Many-to-Many (N:M): Create an intermediate junction table containing foreign keys to both parent tables.
+- **One-to-One (1:1):** Keep them in the same table by default.
+- **One-to-Many (1:N):** Put the foreign key on the "many" side.
+- **Many-to-Many (N:M):** Create an intermediate junction table containing foreign keys to both parent tables.
 
 ## Apply the 3NF Dependency Rule
 Check every column against the primary key. In a normalized table:
@@ -36,9 +36,9 @@ Check every column against the primary key. In a normalized table:
 | Default | `df_<table>_<column>` |
 
 ## Constraints
-- Default to NOT NULL. Allow NULL only when an empty value has a distinct, intentional meaning.
-- Explicitly Define Delete Behavior. Never leave foreign key deletion behavior to engine defaults.
-- Keep CHECK Constraints Independent. A CHECK constraint must only evaluate the data inside the current row. Never attempt to reference other tables or volatile values.
+- **Default to NOT NULL:** Allow NULL only when an empty value has a distinct, intentional meaning.
+- **Explicitly Define Delete Behavior:** Never leave foreign key deletion behavior to engine defaults.
+- **Keep CHECK Constraints Independent:** A CHECK constraint must only evaluate the data inside the current row. Never attempt to reference other tables or volatile values.
 
 ## When to use a Constraint versus Trigger
 - Always use a constraint by default; use a trigger only when a constraint cannot express the rule.
