@@ -9,7 +9,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - Separation of concerns: A piece of code should ever only do one thing.
 - SRP adherence: The Single Responsibility Principle should be followed in all scopes, be it functions, classes, files, or packages. A piece of code should only have one reason to change.
 - Use Encapsulation: Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
-- Composition over redeclaration: Build complex objects and components through composition of simpler, focused parts rather than redeclaring behavior.
+- Composition over redeclaration: Build complex objects and components through composition of simple, focused and reusable parts rather than redeclaring behavior.
 - Composition and inheritance: Generally build objects through composition of simpler objects, but if behavior is widely shared then inheritance SHOULD be used instead of adding the same object field to all classes.
 - LOD adherence: Adhere to the Law of Demeter (the principle of least knowledge, stating that an object or component should only interact with its immediate dependencies).
 - ISP adherence: Adhere to the Interface Segregation Principle, clients should not be forced to depend on interfaces or methods they do not use.
