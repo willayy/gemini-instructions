@@ -14,7 +14,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - LOD adherence: Adhere to the Law of Demeter (the principle of least knowledge, stating that an object or component should only interact with its immediate dependencies).
 - ISP adherence: Adhere to the Interface Segregation Principle, clients should not be forced to depend on interfaces or methods they do not use.
 - DIP adherence: Adhere to the Dependency Inversion Principle, high-level modules should not depend on low-level modules; both should depend on abstractions.
-- Standard library reuse: Never implement functionality that is already provided by the standard library.
+- Open source and standard library reuse: Never implement software or functionality that can be obtained from an open source package or the standard library.
 - Function naming: Functions should always follow a verb-(optional) preposition-noun structure (e.g. send_emails); if a preposition can be added, it should be added (e.g. transform_to_json).
 - Nested calls: Function calls should not be nested; call a function, store the return value in a variable, and then pass the variable.
 - Indenting and nesting: No code, except switch statements, may nest deeper than one level from the root level of a function, file or class.
