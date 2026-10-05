@@ -9,7 +9,8 @@ These rules form the basis of, and are implicitly included in, all other languag
 - Separation of concerns: A piece of code should ever only do one thing.
 - SRP adherence: The Single Responsibility Principle should be followed in all scopes, be it functions, classes, files, or packages. A piece of code should only have one reason to change.
 - Use Encapsulation: Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
-- Composition: Favor composition over inheritance and redeclaration; build complex objects and components by assembling simpler, focused ones.
+- Composition over redeclaration: Build complex objects and components through composition of simpler, focused parts rather than redeclaring behavior.
+- Composition and inheritance: Generally build objects through composition of simpler objects, but if behavior is widely shared then inheritance SHOULD be used instead of adding the same object field to all classes.
 - LOD adherence: Adhere to the Law of Demeter (the principle of least knowledge, stating that an object or component should only interact with its immediate dependencies).
 - ISP adherence: Adhere to the Interface Segregation Principle, clients should not be forced to depend on interfaces or methods they do not use.
 - DIP adherence: Adhere to the Dependency Inversion Principle, high-level modules should not depend on low-level modules; both should depend on abstractions.
@@ -44,4 +45,31 @@ users = map(lambda user: format_profile(user.id, user.attributes) if user.is_act
 **Examples of Law of Demeter (LOD) violations:**
 ```py
 city = order.get_customer().get_address().get_city()
+```
+
+**Examples of composition anti-patterns:**
+```py
+# Anti-pattern: adding a position field to all entity classes with an interface
+# instead of having them inherit a shared base class
+class Entity(Protocol):
+    position: Position
+
+class Player:
+    def __init__(self, position: Position) -> None:
+        self.position = position
+
+class Enemy:
+    def __init__(self, position: Position) -> None:
+        self.position = position
+
+# Correct: share widely used state through BaseEntity parent
+class BaseEntity:
+    def __init__(self, position: Position) -> None:
+        self.position = position
+
+class Player(BaseEntity):
+    pass
+
+class Enemy(BaseEntity):
+    pass
 ```
