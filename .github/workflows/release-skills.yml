@@ -16,14 +16,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Package skills
+      - name: Package skills and plugins
         run: |
           mkdir -p dist
-          for skill_dir in config/skills/*/; do
+          for skill_dir in config/plugins/*/skills/*/; do
             if [ -f "${skill_dir}SKILL.md" ]; then
               skill_name=$(basename "$skill_dir")
-              echo "Packaging $skill_name..."
+              echo "Packaging skill $skill_name..."
               (cd "$skill_dir" && zip -r "$GITHUB_WORKSPACE/dist/${skill_name}.zip" . -x "*.DS_Store*")
+            fi
+          done
+
+          for plugin_dir in config/plugins/*/; do
+            if [ -f "${plugin_dir}plugin.json" ]; then
+              plugin_name=$(basename "$plugin_dir")
+              echo "Packaging plugin $plugin_name..."
+              (cd "$plugin_dir" && zip -r "$GITHUB_WORKSPACE/dist/${plugin_name}.zip" . -x "*.DS_Store*")
             fi
           done
 
@@ -33,5 +41,5 @@ jobs:
         run: |
           TAG="v$(date +'%Y.%m.%d')-${{ github.run_number }}"
           gh release create "$TAG" dist/*.zip \
-            --title "Skills Release $TAG" \
+            --title "Skills & Plugins Release $TAG" \
             --generate-notes
