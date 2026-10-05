@@ -5,9 +5,8 @@ description: Contains React and TypeScript coding rules that must be followed wh
 
 # React Programming Instructions
 
-This styleguide defines rules for writing React and TypeScript code, utilizing MVVM architecture, dependency injection, composition, and colocation.
+This styleguide aims to be a complement to standard React and TypeScript conventions supplementing any gaps that they leave and as such has precedence over any rule defined in this style guide.
 
-**Rules:**
 - **MVVM Architecture:**
   - **Model:** Pure business logic and domain state are placed in the Model.
   - **View-Model (VM):** UI state and dynamics are handled exclusively by the View-Model.
