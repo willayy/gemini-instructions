@@ -22,6 +22,7 @@ gemini-instructions/
 │       ├── react-programming-instructions/
 │       ├── relational-database-instructions/
 │       ├── review-text/
-│       └── sandbox-task/
+│       ├── sandbox-task/
+│       └── skill-creation/
 └── README.md
 ```
