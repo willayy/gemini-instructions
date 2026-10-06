@@ -18,7 +18,7 @@ When this skill is active, adhere to the following rules:
    - Work within the local sandbox limits without requiring unsandboxed network access.
 
 2. **Directory Confinement**:
-   - Confine all created files, project code, temporary scripts, and generated artifacts strictly to the scratch directory (`~/.gemini/antigravity/scratch` or the current task's scratch path).
+   - Confine all created files, project code, temporary scripts, and generated artifacts strictly to the scratch directory.
    - Do not write files or directories outside the designated scratch area.
 
 3. **Autonomous Execution**:
