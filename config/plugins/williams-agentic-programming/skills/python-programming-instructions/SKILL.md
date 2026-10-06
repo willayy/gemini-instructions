@@ -5,11 +5,10 @@ description: Contains Python coding rules that must be followed when writing, ed
 
 # Python Programming Instructions
 
-This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementeting any gaps that they leave and as such they have precedence over any rule defined in this style guide.
+This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementing any gaps that they leave and as such they have precedence over any rule defined in this style guide.
 
-**Rules:**
-- Normally named functions means public functions.
-- _ means module private functions.
-- Inner helper functions should always be written like a public functions since its visibility is limited by default.
-- Each file (module) should only do one thing meaning it should generally only expose 1 public function. The only time it shouldnt is if there is very similar functionality that cant be included via paramaters.
-- Use Match/Case statements for equality checks where a variable can have multiple different values. Use If statements for testing the boolean value of other conditional logic.
+- **Public functions:** Functions without a leading underscore represent public API.
+- **Private functions:** Prefix module-private functions with a leading underscore (`_`).
+- **Inner helpers:** Inner helper functions should be written like public functions since their visibility is limited by default.
+- **Module cohesion:** Modules should represent cohesive units of functionality, grouping related functions, classes, and constants that serve a common responsibility. Expose related public functions and classes that belong together logically rather than artificially restricting a file to a single function.
+- **Conditional branching:** Use `match`/`case` statements for equality checks where a variable can have multiple discrete values. Use `if` statements for testing the boolean value of other conditional logic.
