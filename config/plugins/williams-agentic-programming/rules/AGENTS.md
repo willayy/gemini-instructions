@@ -3,7 +3,7 @@
 These rules form the basis of, and are implicitly included in, all other language-specific style and design guides, but language-specific style and design guides take precedence when there is a conflict.
 
 - **Separation of concerns:** A piece of code should ever only do one thing.
-- **SRP adherence:** The Single Responsibility Principle should be followed in all scopes, be it functions, classes, files, or packages. A piece of code should only have one reason to change.
+- **SRP adherence:** The Single Responsibility Principle should be followed in all scopes, be it functions, classes, files, or packages. A piece of code should only have one reason to change, where a "reason to change" refers to an actor—a single person, role, or stakeholder group that requests changes to the software.
 - **Use Encapsulation:** Encapsulation should always be used to present a comprehensive interface for clients and hide complexity.
 - **Composition over redeclaration:** Build complex objects and components through composition of simple, focused and reusable parts rather than redeclaring behavior.
 - **Composition and inheritance:** Generally build objects through composition of simpler objects, but if behavior is widely shared then inheritance SHOULD be used instead of adding the same object field to all classes.
