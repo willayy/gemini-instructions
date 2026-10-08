@@ -1,9 +1,9 @@
 ---
-name: python-programming-instructions
+name: python-programming
 description: Contains Python coding rules that must be followed when writing, editing, reviewing, or refactoring Python code.
 ---
 
-# Python Programming Instructions
+# Python Programming
 
 This styleguide aims to be a complement to the PEP styleguides & unwritten idiomatic Python rules supplementing any gaps that they leave and as such they have precedence over any rule defined in this style guide.
 
