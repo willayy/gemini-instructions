@@ -17,6 +17,7 @@ These rules form the basis of, and are implicitly included in, all other languag
 - **Line limits:** Lines of code should not span more than 100 characters.
 - **Data storage:** Do not store data in code.
 - **Anonymous functions:** Anonymous functions should never bypass the line limit, though shorter ones used for maps and predicates are acceptable.
+- **Default arguments:** Agents should never use default arguments.
 
 **Examples of illegal nesting:**
 ```py
