@@ -1,9 +1,9 @@
 ---
-name: react-programming-instructions
+name: react-programming
 description: Contains React and TypeScript coding rules that must be followed when writing, editing, reviewing, or refactoring React code.
 ---
 
-# React Programming Instructions
+# React Programming
 
 This styleguide aims to be a complement to standard React and TypeScript conventions supplementing any gaps that they leave and as such has precedence over any rule defined in this style guide.
 
