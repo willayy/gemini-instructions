@@ -15,3 +15,4 @@
 - **Non-reusable scripts:** For testing new features, testing behavior, reproducing errors or diagnosing bugs prefer using inline python code through the terminal.
 - **Storage of single use programs:** Any extra programs written by the agent to complete a task should be placed in the scratch directory nowhere else.
 - **Run permissions:** Always ask if code being worked on should be run or not.
+- **Default arguments:** Agents should never use default arguments.
