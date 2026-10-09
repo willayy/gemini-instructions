@@ -1,9 +1,9 @@
 ---
-name: relational-database-instructions
+name: relational-database
 description: Checklist to run when making changes, additions to a relational database or creating a new relational database.
 ---
 
-# Relational Database Instructions
+# Relational Database
 
 This is a checklist to run when making changes, additions to a relational database or creating a new relational database.
 
